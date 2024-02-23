@@ -1,0 +1,33 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//
+
+import Foundation
+
+protocol {{ module_info.name }}RouterInput {
+
+}
+
+final class {{ module_info.name }}Router {
+
+
+    // MARK: - Properties
+
+    private unowned let transition: TransitionHandler
+
+    
+    // MARK: - Init
+
+    init(transition: TransitionHandler) {
+        self.transition = transition
+    }
+}
+
+
+// MARK: - {{ module_info.name }}RouterInput
+extension {{ module_info.name }}Router: {{ module_info.name }}RouterInput {
+
+}

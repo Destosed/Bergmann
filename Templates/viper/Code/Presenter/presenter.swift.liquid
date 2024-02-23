@@ -1,0 +1,51 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//
+
+import Foundation
+
+protocol {{ module_info.name }}ModuleOutput: AnyObject {
+
+}
+
+protocol {{ module_info.name }}InteractorOutput: AnyObject {
+
+}
+
+protocol {{ module_info.name }}ViewOutput: ViewOutput {
+
+}
+
+final class {{ module_info.name }}Presenter {
+
+
+    // MARK: - Properties
+
+    weak var view: {{ module_info.name }}ViewInput?
+    var interactor: {{ module_info.name }}InteractorInput?
+    var router: {{ module_info.name }}RouterInput?
+
+    private weak var moduleOutput: {{ module_info.name }}ModuleOutput?
+
+
+    // MARK: - Init
+    
+    init() {
+
+    }
+}
+
+
+// MARK: - {{ module_info.name }}ViewOutput
+extension {{ module_info.name }}Presenter: {{ module_info.name }}ViewOutput {
+
+}
+
+
+// MARK: - {{ module_info.name }}InteractorOutput
+extension {{ module_info.name }}Presenter: {{ module_info.name }}InteractorOutput {
+    
+}

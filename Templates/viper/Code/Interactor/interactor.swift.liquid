@@ -1,0 +1,33 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//
+
+import Foundation
+
+protocol {{ module_info.name }}InteractorInput: AnyObject {
+
+}
+
+final class {{ module_info.name }}Interactor {
+
+
+    // MARK: - Properties
+
+    weak var presenter: {{ module_info.name }}InteractorOutput?
+
+
+    // MARK: - Init
+
+    init() {
+        
+    }
+}
+
+
+// MARK: - {{ module_info.name }}InteractorInput
+extension {{ module_info.name }}Interactor: {{ module_info.name }}InteractorInput {
+
+}
